@@ -8,6 +8,10 @@
 </head>
 <body>
 
+<%= image_tag "http://static.wixstatic.com/media/adaa3f_42a6b1ccfeac43baab0ba0c21f7b2631.jpg_srz_3000_1912_85_22_0.50_1.20_0.00_jpg_srz?#{Random.rand(1000)}", style: 'width: 100px; height: 100px' %>
+
+<%= content_tag(:p, flash[:notice]) if flash[:notice] %>
+
 <%= yield %>
 
 </body>
